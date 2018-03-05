@@ -1,0 +1,36 @@
+.top-nav
+  background-color: $white
+  padding: 15px
+  padding-left: 0
+
+.top-nav__menu
+  list-style: none
+  padding: 0
+  margin: 0
+  display: flex
+
+  a
+    position: relative
+    display: block
+    padding: 20px
+    text-transform: uppercase
+    text-decoration: none
+    color: $text-color
+    font-weight: 700
+
+    &::after
+      content: ''
+      position: absolute
+      display: block
+      height: 2px
+      width: 100%
+      left: 0
+      bottom: -24px
+      background-color: $active-color
+      transform: scale(0)
+      transition: 0.32s
+
+    &:hover
+      text-decoration: none
+      &:after
+        transform: scale(1)
