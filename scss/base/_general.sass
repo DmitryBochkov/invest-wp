@@ -6,3 +6,16 @@ body
   font-family: $main-font
   background-color: $bg-color
   color: $text-color
+
+img
+  display: inline-block
+  max-width: 100%
+
+a
+  color: $active-color
+  text-decoration: underline
+  &:hover,
+  &:active,
+  &:focus
+    text-decoration: none
+    color: $active-color
