@@ -2364,6 +2364,43 @@ html {
   opacity: 0.75;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../../fonts/icomoon/icomoon.eot?5jr3xc");
+  src: url("../../fonts/icomoon/icomoon.eot?5jr3xc#iefix") format("embedded-opentype"), url("../../fonts/icomoon/icomoon.ttf?5jr3xc") format("truetype"), url("../../fonts/icomoon/icomoon.woff?5jr3xc") format("woff"), url("../../fonts/icomoon/icomoon.svg?5jr3xc#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\1f32b";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-youtube:before {
+  content: "\ea9d";
+}
+
 html {
   font-size: 14px;
 }
@@ -2387,6 +2424,10 @@ a {
 a:hover, a:active, a:focus {
   text-decoration: none;
   color: #009adf;
+}
+
+.content-wrapper {
+  padding: 40px 0;
 }
 
 .top-nav {
@@ -2429,9 +2470,6 @@ a:hover, a:active, a:focus {
   transform: scale(1);
 }
 
-.sidebar {
-  padding-top: 40px;
-}
 .sidebar__item {
   margin-bottom: 30px;
 }
@@ -2475,7 +2513,6 @@ a:hover, a:active, a:focus {
 }
 
 .content {
-  padding-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -2516,6 +2553,62 @@ a:hover, a:active, a:focus {
   font-weight: 400;
   text-shadow: 2px 2px 25px black;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+  padding: 50px 0;
+  background-color: #131313;
+  color: #666;
+}
+.footer a {
+  color: #666;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+.footer ul a {
+  padding: 10px 0;
+  display: block;
+}
+
+.copyright {
+  padding-right: 30px;
+}
+
+.copyright__privacy {
+  margin-bottom: 50px;
+}
+
+.copyright__text {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.contact,
+.social-links {
+  text-align: right;
+}
+
+.contact .contact__phone {
+  font-size: 18px;
+  color: #009adf;
+  font-weight: 700;
+}
+
+.social-links li {
+  display: inline-block;
+}
+.social-links li a {
+  display: block;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
