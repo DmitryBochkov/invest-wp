@@ -1,12 +1,50 @@
 .sidebar
+  margin-bottom: 30px
+
+  &__btn
+    display: none
+    position: relative
+    width: 100%
+    background-color: $white
+    padding: 15px 29px
+    color: $text-color
+    font-size: 16px
+    text-transform: capitalize
+    border: none
+    outline: none
+    cursor: pointer
+    text-align: left
+
+    &:after
+      content: ''
+      position: absolute
+      display: block
+      width: 16px
+      height: 16px
+      right: 16px
+      top: 50%
+      margin-top: -14px
+      border-bottom: 2px solid #000
+      border-right: 2px solid #000
+      transform: rotate(45deg)
+    &:focus
+      outline: none
+
+    @media screen and (max-width: 991px)
+      display: block
+
 
   &__item
     margin-bottom: 30px
 
   &__menu
+    display: block
     background-color: $white
     list-style: none
     padding: 0
+
+    @media screen and (max-width: 991px)
+      display: none
 
     a
       display: block

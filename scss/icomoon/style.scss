@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('#{$icomoon-font-path}/icomoon.eot?5jr3xc');
-  src:  url('#{$icomoon-font-path}/icomoon.eot?5jr3xc#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/icomoon.ttf?5jr3xc') format('truetype'),
-    url('#{$icomoon-font-path}/icomoon.woff?5jr3xc') format('woff'),
-    url('#{$icomoon-font-path}/icomoon.svg?5jr3xc#icomoon') format('svg');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?7x2014');
+  src:  url('#{$icomoon-font-path}/icomoon.eot?7x2014#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?7x2014') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?7x2014') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?7x2014#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,6 +30,21 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
+.icon-phone {
+  &:before {
+    content: unicode($icon-phone); 
+  }
+}
+.icon-envelop {
+  &:before {
+    content: unicode($icon-envelop); 
+  }
+}
+.icon-menu {
+  &:before {
+    content: unicode($icon-menu); 
+  }
+}
 .icon-facebook {
   &:before {
     content: unicode($icon-facebook); 

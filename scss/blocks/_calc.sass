@@ -1,0 +1,94 @@
+.calc
+
+  &__programs
+    display: flex
+    flex-wrap: wrap
+  &__radio
+    position: relative
+    flex-basis: 50%
+
+    label
+      display: inline-block
+      margin-bottom: 20px
+      cursor: pointer
+      &:before
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        width: 24px
+        height: 24px
+        margin-right: 5px
+        box-shadow: 0 5px 10px rgba(0, 0, 1, .1)
+        background-color: #fff
+        border-radius: 50%
+        // transition: all 0.12s ease-in-out
+
+    input[type="radio"]
+      display: none
+
+      &:checked
+        &+label
+          &:before
+            background-color: $active-color
+            border: 6px solid #fff
+
+    small
+      display: block
+      padding-left: 34px
+      color: $dark
+      opacity: 0.5
+
+  &__popular
+    position: relative
+    width: 140px
+    height: 25px
+    background-color: $active-color
+    color: #fff
+    text-align: center
+    line-height: 25px
+    font-size: 12px
+    text-transform: uppercase
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      width: 6px
+      height: 13px
+      left: -12px
+      top: 50%
+      margin-top: -6px
+      // background-color: $active-color
+      border: 6px solid transparent
+      border-right: 6px solid $active-color
+
+  .calc-main
+    &__title
+      margin-bottom: 30px
+    &__sum
+      margin-top: 30px
+      margin-bottom: 20px
+    &__label
+      display: inline-block
+      margin-right: 10px
+    &__num
+      display: inline-block
+      padding: 10px 48px
+      background-color: #fff
+      font-size: 18px
+    &__result,
+    &__income
+      display: inline-block
+      padding: 10px 48px
+      text-align: center
+      background-color: #fff
+    &__income
+      background-color: unset
+      .calc-main__total
+        color: $text-color
+    &__total
+      display: block
+      color: $active-color
+      font-size: 18px
+    &__details
+      display: block
+      font-size: 10px

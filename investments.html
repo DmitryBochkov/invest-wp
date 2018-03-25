@@ -92,13 +92,82 @@
 
         <div class="col-lg-8">
           <section class="content">
-            <h2 class="section-title">We provide</h2>
+            <h2 class="section-title">Investments</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamc. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="button" href="#">Learn more about us</a>
           </section>
+
+          <section class="calc">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="calc__programs">
+                  <div class="calc__radio">
+                    <input id="program-1" type="radio" name="programs" data-month="6" data-percent="0.2">
+                    <label for="program-1">
+                      <span>20% per year</span>
+                      <small>6 months</small>
+                    </label>
+                  </div>
+                  <div class="calc__radio">
+                    <input id="program-2" type="radio" name="programs" data-month="12" data-percent="0.24" checked="checked">
+                    <label for="program-2">
+                      <span>24% per year</span>
+                      <small>1 year</small>
+                    </label>
+                  </div>
+                  <div class="calc__radio">
+                    <input id="program-3" type="radio" name="programs" data-month="24" data-percent="0.26">
+                    <label for="program-3">
+                      <span>26% per year</span>
+                      <small>2 years</small>
+                    </label>
+                  </div>
+                  <div class="calc__radio">
+                    <input id="program-4" type="radio" name="programs" data-month="36" data-percent="0.28">
+                    <label for="program-4">
+                      <span>28% per year</span>
+                      <small>3 years</small>
+                    </label>
+                  </div>
+                  <div class="calc__radio">
+                    <input id="program-5" type="radio" name="programs" data-month="48" data-percent="0.32">
+                    <label for="program-5">
+                      <span>32% per year</span>
+                      <small>4 years</small>
+                    </label>
+                  </div>
+
+                  <div class="calc__popular">
+                    popular program
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="calc__content calc-main">
+                  <h4 class="calc-main__title">Specify invested sum</h4>
+                  <input class="calc-range" type="text" name="sum">
+                  <div class="calc-main__sum">
+                    <span class="calc-main__label">Sum: </span>
+                    <span class="calc-main__num">$10 000</span>
+                  </div>
+
+                  <div class="calc-main__result">
+                    <span class="calc-main__total calc-main__total--result">$11000</span>
+                    <span class="calc-main__details calc-main__details--result">Sum in <span>12</span> months</span>
+                  </div>
+
+                  <div class="calc-main__income">
+                    <span class="calc-main__total calc-main__total--income">1000</span>
+                    <span class="calc-main__details">Monthly income</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section class="services">
             <h2 class="section-title">We offer</h2>
 
@@ -191,6 +260,7 @@
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/powerange/powerange.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
